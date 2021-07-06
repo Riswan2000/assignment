@@ -1,0 +1,17 @@
+div{
+    background-color: aqua;
+    border-radius: 1px;
+}
+p{
+    font-size: larger;
+}
+>header{
+    font-size: 50px;
+}
+table, th, td {
+    width: %;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items:center;
+  }

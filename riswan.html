@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<style>
+  header{
+    text-align: center;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-display: initial;
+  }
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 70%;
+  background-color: #dd2020;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f16c2e;
+}
+input[type=reset] {
+  width:70%;
+  background-color: #02425c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #fc802e;
+}
+
+div {
+  border-radius: 5px;
+  background-color:#f2f2e6;
+  padding: 20px;
+  border: 1px solid rgb(27, 26, 26);
+}
+
+body, html {
+  height: 100%;
+}
+
+label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        font-size: 14px;
+        
+      }
+      input[type=range]{
+        width:auto;
+        height: auto;
+      }
+      input[type=number]{
+        width:auto;
+        height:auto;
+        font-color:red;
+      }
+      
+      ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+<body >
+  
+
+    <header><ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul></header>
+
+<div>
+  <form action="table.html"">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   <br> <label for="myfile"> UPLOAD YOUR IMAGE </label>
+    <input type="file" id="myfile" name="myfile"><br>
+
+    <BR><label>AGE</label>
+    <input type="text" id="" placeholder="Your AGE"maxlength="3"/><br><br> 
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="INDIA">INDIA</option>
+      <option value="canada">Canada</option>
+      <option value="usa">US</option>
+    </select>
+    <label for="states">Choose your State:</label>
+    <input list="states" name="state" id="state">
+    
+    <datalist id="states">
+      <option value="kerala">
+      <option value="tamil nadu">
+      <option value="goa">
+      <option value="Delhi">
+      <option value="bihar">
+    </datalist>
+    <br><label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" maxlength="10" > <br><br>
+         
+           <input type="range" id="a" value="50">
+           +<input type="number" id="b" value="25">
+           =<output name="x" for="a b" font color="black"></output>
+          <br><br><br>
+        
+ 
+  <center> <input type="submit" value="Submit" onclick="myFunction()">
+    <input type="reset" value="reset"></center>
+  </form>
+</div>
+
+<script>
+  function myFunction() {
+  var txt;
+  if (confirm("ARE YOU SURE")) {
+    txt = "You pressed OK!";
+   
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  
+}
+  </script>
+</body>
+</html>
